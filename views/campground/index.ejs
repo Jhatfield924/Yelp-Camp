@@ -1,4 +1,4 @@
-<%- include("partials/header") %>
+<%- include("../partials/header") %>
 <div class="container">
   <header class="jumbotron">
     <div class="container">
@@ -20,7 +20,7 @@
   <div class="row flex-wrap: wrap">
     <% campgrounds.forEach((campground) => { %>
     <div class="col-12 col-xl-3 col-sm-6 mr-1">
-      <div class="img-thumbnail">
+      <div class="thumbnail img-thumbnail">
         <img src="<%= campground.image %>" class="img-fluid" />
         <div class="caption">
           <h4><%= campground.name %></h4>
@@ -34,4 +34,4 @@
   </div>
 </div>
 
-<%- include("partials/footer") %>
+<%- include("../partials/footer") %>
